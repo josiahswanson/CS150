@@ -45,15 +45,16 @@
       main {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-        grid-template-rows: repeat(6, 200px);
+        grid-template-rows: repeat(2, 200px);
         grid-gap: 10px;
         grid-auto-flow: dense;
-        background-color: #EFF;
         padding: 10px;
       }
       main div {
 	width: 100%;
 	height: 100%;
+	padding: 20px 0;
+	background-color: #EFF;
 	object-fit: cover;
       }
       main div:nth-child(4n) {
