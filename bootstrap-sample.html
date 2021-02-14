@@ -8,19 +8,28 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <style>
-      #repsonsiveimage {max-width:210px;}
+      body {
+        max-width: 700px;
+      }
+      #repsonsiveimage {
+        width: 80%;
+      }     
       main {
         display: grid;
-        grid-template-columns: auto auto auto auto;
-        grid-template-rows: 100px 300px;
+        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+        grid-template-rows: repeat(6, 200px);
         grid-gap: 10px;
+        gird-auto-flow: dense;
         background-color: #EFF;
         padding: 10px;
       }
-      main div {
-        text-align: center;
-        padding: 20px 0;
-        font-size: 30px;
+      main div:nth-child(4n) {
+        grid-column: span 2;
+        grid-row: span 2;
+      }
+      main div:nth-child(8n) {
+        grid-column: span 3;
+        grid-row: span 3;
       }
       .container {
         min-width: 500px;
@@ -38,9 +47,10 @@
     <img src ="https://josiahswanson.com/img/005.jpg" alt="palm tree" id="responsiveimage">
       <main>
       <div><p>This is the day that the LORD has made...</p></div>
-      <div><p>This is the day that the LORD has made...</p></div>
-      <div><p>This is the day that the LORD has made...</p></div>
-      <div><p>This is the day that the LORD has made...</p></div>
+      <div><p>Yup, that's right...</p></div>
+      <div><img src="https://josiahswanson.com/img/009.jpg" alt="An image from my webstite"></div>
+      <div><p>How Cool!</p></div>
+      <div><p>Not much to it,honestly!</p></div>
     </main>
     </div>
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
