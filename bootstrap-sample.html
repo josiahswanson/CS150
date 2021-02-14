@@ -1,95 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <title>Bootstrap Sample!</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+        integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <style>
-      html {
-        font-family: sans-serif;
-        -ms-text-size-adjust: 100%;
-        -webkit-text-size-adjust: 100%
-      }
-      article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
-        display: block
-      }
-      body {
-        max-width: 700px;
-        margin: 0 auto;
-        padding: 0;
-      }
-      img {
-        margin: 0;
-	      max-width: 100%;
-	      padding: 0;
-	      vertical-align: middle;
-      }
-      p {
-        color: #180D0E;
-	      font-size: 14px;
-      	font-weight: 400;
-	      letter-spacing: 0.03em;
-	      line-height: 30px;
-	      margin: 8px 0;
-	      padding: 0 8%;
-        text-decoration: none;
-      	width: 84%;
-      }
-      #repsonsiveimage {
-        width: 20%;
-	margin: 0 auto;
-      }     
-      main {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-        grid-template-rows: repeat(2, 200px);
-        grid-gap: 10px;
-        grid-auto-flow: dense;
-        padding: 10px;
-      }
-      main div {
-	width: 100%;
-	height: 100%;
-	padding: 20px 0;
-	background-color: #EFF;
-	object-fit: cover;
-      }
-      main div:nth-child(4n) {
-        grid-column: span 2;
-        grid-row: span 2;
-      }
-      main div:nth-child(8n) {
-        grid-column: span 3;
-        grid-row: span 3;
-      }
-      .container {
-        min-width: 500px;
-        margin: auto;
-      }
+        html {
+            font-family: sans-serif;
+            -ms-text-size-adjust: 100%;
+            -webkit-text-size-adjust: 100%
+        }
+
+        article,
+        aside,
+        details,
+        figcaption,
+        figure,
+        footer,
+        header,
+        hgroup,
+        main,
+        menu,
+        nav,
+        section,
+        summary {
+            display: block
+        }
+
+        body {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 0;
+        }
+
+        nav {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            width: 100%;
+        }
+
+        header nav {
+            padding: 20px 0 0 0;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline-block;
+            margin: 0 10px;
+            padding: 0;
+        }
+
+        img {
+            margin: 0;
+            max-width: 100%;
+            padding: 0;
+            vertical-align: middle;
+        }
+
+        p {
+            color: #180D0E;
+            font-size: 14px;
+            font-weight: 400;
+            letter-spacing: 0.03em;
+            line-height: 30px;
+            margin: 8px 0;
+            padding: 0 8%;
+            text-decoration: none;
+            width: 84%;
+        }
+
+        #repsonsiveimage {
+            width: 20%;
+            margin: 0 auto;
+        }
+
+        main {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            grid-template-rows: repeat(2, 200px);
+            grid-gap: 10px;
+            grid-auto-flow: dense;
+            padding: 10px;
+        }
+
+        main div {
+            width: 100%;
+            height: 100%;
+            padding: 20px 0;
+            background-color: #EFF;
+            object-fit: cover;
+        }
+
+        main div:nth-child(4n) {
+            grid-column: span 2;
+            grid-row: span 2;
+        }
+
+        main div:nth-child(8n) {
+            grid-column: span 3;
+            grid-row: span 3;
+        }
+
+        .container {
+            min-width: 500px;
+            margin: auto;
+        }
     </style>
-  </head>
-  <body>
+</head>
+
+<body>
     <div class="container">
-    <ul>
-      <li><a href="css_demo.html">Check out this CSS demo!</a></li>
-      <li><a href="font-sample.html">Check out this font demo!</a></li>
-      <li><a href="bootstrap-sample.html">Check out this bootstrap demo!</a></li>
-    </ul>
-    <img src ="https://josiahswanson.com/img/580413_PS_PAW_BILL_SUIT-scaled.jpg" alt="palm tree" id="responsiveimage">
-    <main>
-      <div><p>This is the day that the LORD has made...</p></div>
-      <div><p>Yup, that's right...</p></div>
-      <div><img src="https://cdn.theatlantic.com/static/mt/assets/science/cat_caviar.jpg" alt="gangster cat"></div>
-      <div><p>How Cool!</p></div>
-      <div><p>Not much to it,honestly!</p></div>
-    </main>
+        <ul>
+            <li><a href="css_demo.html">Check out this CSS demo!</a></li>
+            <li><a href="font-sample.html">Check out this font demo!</a></li>
+            <li><a href="bootstrap-sample.html">Check out this bootstrap demo!</a></li>
+        </ul>
+        <img src="https://josiahswanson.com/img/580413_PS_PAW_BILL_SUIT-scaled.jpg" alt="palm tree"
+            id="responsiveimage">
+        <main>
+            <div>
+                <p>This is the day that the LORD has made...</p>
+            </div>
+            <div>
+                <p>Yup, that's right...</p>
+            </div>
+            <div><img src="https://cdn.theatlantic.com/static/mt/assets/science/cat_caviar.jpg" alt="gangster cat">
+            </div>
+            <div>
+                <p>How Cool!</p>
+            </div>
+            <div>
+                <p>Not much to it,honestly!</p>
+            </div>
+        </main>
     </div>
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
-    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-  </body>
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+        integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+        integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
+        integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>
